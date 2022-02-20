@@ -1,0 +1,15 @@
+- [x] New Profile
+- [x] Switch Profile
+- [x] Refresh tree if workspace setting is update
+- [x] Sort tree
+- [x] Implement existing commands
+- [ ] explorer context menu
+- [ ] 存在しないファイルはグレーアウトする
+- [x] 最近開いたファイルもツリー表示する
+- [ ] ファイルが存在しないフォルダはExplorerのようにまとめて表示する
+- [ ] フォルダを追加できるように
+- [x] 正規表現でファイルパターンを設定できる
+- [ ] Copy Path
+- [ ] Copy and paste
+- [ ] Rename a file
+- [x] 新しいファイルが追加されたときに反映する
