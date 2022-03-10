@@ -4,7 +4,11 @@
   "publisher": "ryotarai",
   "license": "MIT",
   "version": "0.0.1",
-  "repository": "https://github.com/ryotarai/eda",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ryotarai/vscode-eda.git"
+  },
+  "icon": "resources/icon.png",
   "engines": {
     "vscode": "^1.64.0"
   },
@@ -25,10 +29,7 @@
       {
         "command": "eda.refreshTree",
         "title": "Eda: Refresh Tree",
-        "icon": {
-          "light": "resources/light/refresh.svg",
-          "dark": "resources/dark/refresh.svg"
-        }
+        "icon": "$(refresh)"
       },
       {
         "command": "eda.openFile",
