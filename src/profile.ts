@@ -41,8 +41,8 @@ type PatternConfig = {
 };
 
 type ProfileConfig = {
-  files: FileConfig[];
-  patterns: PatternConfig[];
+  files?: FileConfig[];
+  patterns?: PatternConfig[];
 };
 
 type ProfilesConfig = { [name: string]: ProfileConfig };
@@ -51,8 +51,8 @@ class Profile {
   static fromConfig(name: string, data: ProfileConfig): Profile {
     return new Profile(
       name,
-      data.files.map((f) => File.fromConfig(f)),
-      data.patterns
+      data.files?.map((f) => File.fromConfig(f)) || [],
+      data.patterns || []
     );
   }
 
