@@ -4,7 +4,9 @@ Eda is an extension for VS Code to focus files in Explorer view.
 
 If your project contains a large number of files, it will be difficult to find certain files from Explorer view. Eda limits shown files and it will be easier to find files.
 
-## Usage
+![screenshot](./doc/screenshot.png)
+
+## Basic Usage
 
 ### Option 1. Add exact files
 
@@ -15,7 +17,7 @@ If your project contains a large number of files, it will be difficult to find c
 ### Option 2. Filter files by regular expression
 
 1. Open workspace settings in JSON
-    1. Ctrl(Cmd)-Shift-P > `Preferences: Open Workspace Settings (JSON)`
+    1. Command Palette (Ctrl(Cmd)-Shift-P) > `Preferences: Open Workspace Settings (JSON)`
 2. Add patterns to `eda.profiles` as follows.
 
 ```json
@@ -37,3 +39,18 @@ If your project contains a large number of files, it will be difficult to find c
   }
 }
 ```
+
+## Profiles
+
+Eda supports multiple profiles to switch filtered files.
+
+### Create a Profile
+
+1. Open Command Palette (Ctrl(Cmd)-Shift-P)
+2. Select `Create a New Profile`
+3. Input new profile name, then press enter
+
+### Switch Profile
+
+1. Open Command Palette (Ctrl(Cmd)-Shift-P)
+2. Select `Switch Profile`
